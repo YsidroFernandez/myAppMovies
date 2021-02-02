@@ -28,14 +28,16 @@ class HomePage extends StatelessWidget {
               })
         ],
       ),
-      body: Container(
-          child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        children: <Widget>[
-          _swiperCards(),
-          _footer(context),
-        ],
-      )),
+      body:SingleChildScrollView(
+        child: Container(
+            child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: <Widget>[
+            _swiperCards(),
+            _footer(context),
+          ],
+        )),
+      ),
     );
   }
 
